@@ -3,6 +3,10 @@
   publish = "dist"
   base = "service"
 
+[build.environment]
+  NPM_FLAGS = "--global-style --no-audit --prefer-offline --no-bin-links --no-optional"
+  NPM_VERSION = "6.14.13"
+
 [template]
   incoming-hooks = ["OpenAI"]
   [template.environment]
