@@ -261,7 +261,7 @@ services:
 > 注意: `Railway` 修改环境变量会重新 `Deploy`
 
 ###  使用 netlify 部署
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Chanzhaoyu/chatgpt-web"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/angping/chatgpt-web"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
 ### 手动打包
 #### 后端服务
