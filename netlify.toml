@@ -1,19 +1,12 @@
+[build.environment]
+  NETLIFY_USE_PNPM = "true"
+  NODE_VERSION = "18"
+
 [build]
-  command = "pnpm run build"
+  command = "OUTPUT=netlify astro build"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "18"
-  VITE_GLOB_API_URL = "/api"
-  VITE_GLOB_APP_TITLE = "ChatGPT Web"
-  VITE_GLOB_APP_SHORT_NAME = "ChatGPT Web"
-  VITE_GLOB_APP_DESCRIPTION = "A demo repo based on OpenAI API."
-  VITE_GLOB_APP_THEME_COLOR = "#1890ff"
-  VITE_GLOB_APP_BASE_URL = "/"
-  VITE_GLOB_API_URL_PREFIX = "/api"
-  VITE_GLOB_APP_PWA = "false"
-
-[[redirects]]
-  from = "/api/*"
-  to = "http://localhost:3002/api/:splat"
-  status = 200
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
