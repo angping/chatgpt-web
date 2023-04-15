@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "npm run vite:build"
   publish = "dist"
- base = "service"
+  base = "service"
 
 [template]
   incoming-hooks = ["OpenAI"]
